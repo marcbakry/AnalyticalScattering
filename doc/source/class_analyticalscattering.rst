@@ -1,4 +1,4 @@
-.. _label-analyticalscattering-class:
+.. _label-class-analyticalscattering:
 
 Class AnalyticalScattering
 ==========================
@@ -7,3 +7,9 @@ Class AnalyticalScattering
     :project: analyticalscattering
     :members:
     :undoc-members:
+
+.. doxygenenum:: radtyp
+    :project: analyticalscattering
+
+.. doxygenenum:: bndc
+    :project: analyticalscattering
