@@ -1,0 +1,7 @@
+# misc
+.vscode/
+build/
+xml/xcode/
+
+# Desktop Service Store (macOS)
+.DS_Store

@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.17">
+  <compound refid="classAnalyticalScattering" kind="class"><name>AnalyticalScattering</name>
+    <member refid="classAnalyticalScattering_1a1df5ec5e9a424bbacf1e57a99f520945" kind="function"><name>sphereHelmholtz</name></member>
+    <member refid="classAnalyticalScattering_1ac70ba279d94a6bb53a81a6d98c81a84d" kind="function"><name>sphBessel</name></member>
+    <member refid="classAnalyticalScattering_1a8d917905e082216bd824d7786320efa6" kind="function"><name>sphNeumann</name></member>
+    <member refid="classAnalyticalScattering_1af7cb8ebde2664aadf66c41fe092f157d" kind="function"><name>alphaDir</name></member>
+    <member refid="classAnalyticalScattering_1ac94f384216766dad471a688ce0ac6c07" kind="function"><name>sphereHelmholtzDir</name></member>
+    <member refid="classAnalyticalScattering_1a3d8b7d8f3aa100454d7f90e7a9787e39" kind="function"><name>djsph</name></member>
+    <member refid="classAnalyticalScattering_1abcd8b34cc495b6b0cfa633cb9c49ad62" kind="function"><name>dhsph</name></member>
+    <member refid="classAnalyticalScattering_1a4159746b8fc08848bf02c03b60f630b7" kind="function"><name>alphaNeu</name></member>
+    <member refid="classAnalyticalScattering_1a199dbedc1ad3cea45328e612b82838ee" kind="function"><name>sphereHelmholtzNeu</name></member>
+  </compound>
+  <compound refid="AnalyticalScattering_8hpp" kind="file"><name>AnalyticalScattering.hpp</name>
+    <member refid="AnalyticalScattering_8hpp_1a7036b7707d837b7420c167cc36fb9fc7" kind="enum"><name>radtyp</name></member>
+    <member refid="AnalyticalScattering_8hpp_1a7036b7707d837b7420c167cc36fb9fc7a94b30131f2ed39557d5354e67f58e5a9" kind="enumvalue"><name>infinity</name></member>
+    <member refid="AnalyticalScattering_8hpp_1a7036b7707d837b7420c167cc36fb9fc7a5ec3a54a8673ab1a3601e04c981e3be3" kind="enumvalue"><name>boundary</name></member>
+    <member refid="AnalyticalScattering_8hpp_1a7036b7707d837b7420c167cc36fb9fc7a765b6676d9918d831920205958ab9b62" kind="enumvalue"><name>domain</name></member>
+    <member refid="AnalyticalScattering_8hpp_1a5af0f30f4459e59c3b49f75550cb2a53" kind="enum"><name>bndc</name></member>
+    <member refid="AnalyticalScattering_8hpp_1a5af0f30f4459e59c3b49f75550cb2a53a1b4f535d1f53363637f933002efc2b4b" kind="enumvalue"><name>dirichlet</name></member>
+    <member refid="AnalyticalScattering_8hpp_1a5af0f30f4459e59c3b49f75550cb2a53a8e855db37d5c0fbd8eda96b2f51b8b20" kind="enumvalue"><name>neumann</name></member>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>/home/marc/Documents/programmation/CPP/AnalyticalScattering/include</name>
+  </compound>
+</doxygenindex>

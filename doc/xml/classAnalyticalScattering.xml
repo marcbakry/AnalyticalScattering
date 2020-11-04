@@ -1,0 +1,276 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classAnalyticalScattering" kind="class" language="C++" prot="public">
+    <compoundname>AnalyticalScattering</compoundname>
+    <includes refid="AnalyticalScattering_8hpp" local="no">AnalyticalScattering.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classAnalyticalScattering_1a1df5ec5e9a424bbacf1e57a99f520945" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>matrix&lt; std::complex&lt; T &gt; &gt;</type>
+        <definition>matrix&lt;std::complex&lt;T&gt; &gt; AnalyticalScattering&lt; T &gt;::sphereHelmholtz</definition>
+        <argsstring>(matrix&lt; T &gt; Xobs, T rho, T k, bndc bc, radtyp rt)</argsstring>
+        <name>sphereHelmholtz</name>
+        <param>
+          <type>matrix&lt; T &gt;</type>
+          <declname>Xobs</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>rho</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>bndc</type>
+          <declname>bc</declname>
+        </param>
+        <param>
+          <type>radtyp</type>
+          <declname>rt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Computes the exact scattered acoustic field when the obstacle is a sphere. The arguments are:<linebreak/>
+<itemizedlist>
+<listitem><para><emphasis>Xobs</emphasis> : observation nodes. If <emphasis>bc</emphasis> == farfield, the <emphasis>Xobs</emphasis> are the directions in which the farfield amplitude will be computed.</para>
+</listitem><listitem><para><emphasis>rho</emphasis> : radius of the sphere.</para>
+</listitem><listitem><para><emphasis>k</emphasis> : wavenumber.</para>
+</listitem><listitem><para><emphasis>rt</emphasis> : type of computation (<emphasis>boundary</emphasis>, <emphasis>domain</emphasis>, <emphasis>infinity</emphasis>)</para>
+</listitem><listitem><para><emphasis>bc</emphasis> : type of boundary condition (<emphasis>Dirichlet</emphasis>, <emphasis>Neumann</emphasis>) </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/marc/Documents/programmation/CPP/AnalyticalScattering/include/AnalyticalScattering.hpp" line="48" column="12" bodyfile="/home/marc/Documents/programmation/CPP/AnalyticalScattering/include/AnalyticalScattering.hpp" bodystart="48" bodyend="84"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classAnalyticalScattering_1ac70ba279d94a6bb53a81a6d98c81a84d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double AnalyticalScattering&lt; T &gt;::sphBessel</definition>
+        <argsstring>(std::size_t n, double x)</argsstring>
+        <name>sphBessel</name>
+        <param>
+          <type>std::size_t</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/marc/Documents/programmation/CPP/AnalyticalScattering/include/AnalyticalScattering.hpp" line="88" column="19" bodyfile="/home/marc/Documents/programmation/CPP/AnalyticalScattering/include/AnalyticalScattering.hpp" bodystart="88" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classAnalyticalScattering_1a8d917905e082216bd824d7786320efa6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double AnalyticalScattering&lt; T &gt;::sphNeumann</definition>
+        <argsstring>(std::size_t n, double x)</argsstring>
+        <name>sphNeumann</name>
+        <param>
+          <type>std::size_t</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/marc/Documents/programmation/CPP/AnalyticalScattering/include/AnalyticalScattering.hpp" line="97" column="19" bodyfile="/home/marc/Documents/programmation/CPP/AnalyticalScattering/include/AnalyticalScattering.hpp" bodystart="97" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classAnalyticalScattering_1af7cb8ebde2664aadf66c41fe092f157d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::complex&lt; double &gt;</type>
+        <definition>std::complex&lt;double&gt; AnalyticalScattering&lt; T &gt;::alphaDir</definition>
+        <argsstring>(std::size_t n, double x)</argsstring>
+        <name>alphaDir</name>
+        <param>
+          <type>std::size_t</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/marc/Documents/programmation/CPP/AnalyticalScattering/include/AnalyticalScattering.hpp" line="107" column="25" bodyfile="/home/marc/Documents/programmation/CPP/AnalyticalScattering/include/AnalyticalScattering.hpp" bodystart="107" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classAnalyticalScattering_1ac94f384216766dad471a688ce0ac6c07" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>matrix&lt; std::complex&lt; double &gt; &gt;</type>
+        <definition>matrix&lt;std::complex&lt;double&gt; &gt; AnalyticalScattering&lt; T &gt;::sphereHelmholtzDir</definition>
+        <argsstring>(matrix&lt; double &gt;const &amp;theta, matrix&lt; double &gt;const &amp;r, double rho, double k, radtyp rt)</argsstring>
+        <name>sphereHelmholtzDir</name>
+        <param>
+          <type>matrix&lt; double &gt;const &amp;</type>
+          <declname>theta</declname>
+        </param>
+        <param>
+          <type>matrix&lt; double &gt;const &amp;</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>rho</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>radtyp</type>
+          <declname>rt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/marc/Documents/programmation/CPP/AnalyticalScattering/include/AnalyticalScattering.hpp" line="113" column="12" bodyfile="/home/marc/Documents/programmation/CPP/AnalyticalScattering/include/AnalyticalScattering.hpp" bodystart="113" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="classAnalyticalScattering_1a3d8b7d8f3aa100454d7f90e7a9787e39" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double AnalyticalScattering&lt; T &gt;::djsph</definition>
+        <argsstring>(std::size_t n, double x)</argsstring>
+        <name>djsph</name>
+        <param>
+          <type>std::size_t</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/marc/Documents/programmation/CPP/AnalyticalScattering/include/AnalyticalScattering.hpp" line="176" column="19" bodyfile="/home/marc/Documents/programmation/CPP/AnalyticalScattering/include/AnalyticalScattering.hpp" bodystart="176" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="classAnalyticalScattering_1abcd8b34cc495b6b0cfa633cb9c49ad62" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::complex&lt; double &gt;</type>
+        <definition>std::complex&lt;double&gt; AnalyticalScattering&lt; T &gt;::dhsph</definition>
+        <argsstring>(std::size_t n, double x)</argsstring>
+        <name>dhsph</name>
+        <param>
+          <type>std::size_t</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/marc/Documents/programmation/CPP/AnalyticalScattering/include/AnalyticalScattering.hpp" line="192" column="25" bodyfile="/home/marc/Documents/programmation/CPP/AnalyticalScattering/include/AnalyticalScattering.hpp" bodystart="192" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="classAnalyticalScattering_1a4159746b8fc08848bf02c03b60f630b7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::complex&lt; double &gt;</type>
+        <definition>std::complex&lt;double&gt; AnalyticalScattering&lt; T &gt;::alphaNeu</definition>
+        <argsstring>(std::size_t n, double x)</argsstring>
+        <name>alphaNeu</name>
+        <param>
+          <type>std::size_t</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/marc/Documents/programmation/CPP/AnalyticalScattering/include/AnalyticalScattering.hpp" line="197" column="25" bodyfile="/home/marc/Documents/programmation/CPP/AnalyticalScattering/include/AnalyticalScattering.hpp" bodystart="197" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="classAnalyticalScattering_1a199dbedc1ad3cea45328e612b82838ee" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>matrix&lt; std::complex&lt; double &gt; &gt;</type>
+        <definition>matrix&lt;std::complex&lt;double&gt; &gt; AnalyticalScattering&lt; T &gt;::sphereHelmholtzNeu</definition>
+        <argsstring>(matrix&lt; double &gt;const &amp;theta, matrix&lt; double &gt;const &amp;r, double rho, double k, radtyp rt)</argsstring>
+        <name>sphereHelmholtzNeu</name>
+        <param>
+          <type>matrix&lt; double &gt;const &amp;</type>
+          <declname>theta</declname>
+        </param>
+        <param>
+          <type>matrix&lt; double &gt;const &amp;</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>rho</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>radtyp</type>
+          <declname>rt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/marc/Documents/programmation/CPP/AnalyticalScattering/include/AnalyticalScattering.hpp" line="202" column="12" bodyfile="/home/marc/Documents/programmation/CPP/AnalyticalScattering/include/AnalyticalScattering.hpp" bodystart="202" bodyend="261"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Class for the analytical computation of scattered waves when the incident field is a plane wave propagating along the -e_z axis. The obstacle is assumed to be a non-penetrable sphere with various boundary conditions.<linebreak/>
+There are three types of computation:<linebreak/>
+<itemizedlist>
+<listitem><para>field on the surface,<linebreak/>
+</para>
+</listitem><listitem><para>field in the propagation domain,<linebreak/>
+</para>
+</listitem><listitem><para>farfield amplitude (amplitude of the 0th-order term of the asymptotic expansion at infinity) </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <location file="/home/marc/Documents/programmation/CPP/AnalyticalScattering/include/AnalyticalScattering.hpp" line="40" column="1" bodyfile="/home/marc/Documents/programmation/CPP/AnalyticalScattering/include/AnalyticalScattering.hpp" bodystart="39" bodyend="263"/>
+    <listofallmembers>
+      <member refid="classAnalyticalScattering_1af7cb8ebde2664aadf66c41fe092f157d" prot="private" virt="non-virtual"><scope>AnalyticalScattering</scope><name>alphaDir</name></member>
+      <member refid="classAnalyticalScattering_1a4159746b8fc08848bf02c03b60f630b7" prot="private" virt="non-virtual"><scope>AnalyticalScattering</scope><name>alphaNeu</name></member>
+      <member refid="classAnalyticalScattering_1abcd8b34cc495b6b0cfa633cb9c49ad62" prot="private" virt="non-virtual"><scope>AnalyticalScattering</scope><name>dhsph</name></member>
+      <member refid="classAnalyticalScattering_1a3d8b7d8f3aa100454d7f90e7a9787e39" prot="private" virt="non-virtual"><scope>AnalyticalScattering</scope><name>djsph</name></member>
+      <member refid="classAnalyticalScattering_1ac70ba279d94a6bb53a81a6d98c81a84d" prot="private" virt="non-virtual"><scope>AnalyticalScattering</scope><name>sphBessel</name></member>
+      <member refid="classAnalyticalScattering_1a1df5ec5e9a424bbacf1e57a99f520945" prot="public" virt="non-virtual"><scope>AnalyticalScattering</scope><name>sphereHelmholtz</name></member>
+      <member refid="classAnalyticalScattering_1ac94f384216766dad471a688ce0ac6c07" prot="private" virt="non-virtual"><scope>AnalyticalScattering</scope><name>sphereHelmholtzDir</name></member>
+      <member refid="classAnalyticalScattering_1a199dbedc1ad3cea45328e612b82838ee" prot="private" virt="non-virtual"><scope>AnalyticalScattering</scope><name>sphereHelmholtzNeu</name></member>
+      <member refid="classAnalyticalScattering_1a8d917905e082216bd824d7786320efa6" prot="private" virt="non-virtual"><scope>AnalyticalScattering</scope><name>sphNeumann</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

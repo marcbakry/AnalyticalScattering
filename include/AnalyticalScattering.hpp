@@ -14,9 +14,6 @@ extern "C"
 #include <cmath>
 #endif
 
-namespace castor
-{
-
 /// Choose the type of field computation:\n
 /// - infinity: compute the far-field amplitude\n
 /// - boundary: compute the scattered field on the surface of the scatterer\n
@@ -29,6 +26,7 @@ enum radtyp{infinity,boundary,domain};
 enum bndc{dirichlet,neumann};
 
 
+// [AnalyticalScattering]
 /// Class for the analytical computation of scattered waves when the incident
 /// field is a plane wave propagating along the -e_z axis. The obstacle is
 /// assumed to be a non-penetrable sphere with various boundary conditions.\n
@@ -263,7 +261,3 @@ private:
     }
 
 };
-
-
-// end of namespace
-}
