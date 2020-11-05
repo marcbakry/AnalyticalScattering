@@ -18,7 +18,7 @@ Requirements
 
 .. code:: text
 
-    g++ -I/path/to/analyticalscattering_hpp -I/path/to/matrix_hpp -DCXX17_COMPLIANT overview.cpp -o testAnayticalScattering
+    g++ -std=c++17 -I/path/to/analyticalscattering_hpp -I/path/to/matrix_hpp -DCXX17_COMPLIANT overview.cpp -o testAnayticalScattering
 
 **Remark:** if you are using ``cmake``, simply add ``add_definitions(-DCXX17_COMPLIANT)`` in the ``CMakeLists.txt`` file.
 
@@ -26,8 +26,9 @@ In the other case, one must link with the ``GNU Scientific Library`` (see `GSL <
 
 .. code:: text
 
-    g++ -I/path/to/analyticalscattering_hpp -I/path/to/matrix_hpp overview.cpp -lgsl -lgslcblas -o testAnayticalScattering
+    g++ -std=c++14 -I/path/to/analyticalscattering_hpp -I/path/to/matrix_hpp overview.cpp -lgsl -lgslcblas -o testAnayticalScattering
 
+Note that if for one reason or the other one already links to a ``cblas`` library, one can omit ``-lgslcblas``.
 
 .. toctree::
     :caption: How-to
