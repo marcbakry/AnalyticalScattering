@@ -6,14 +6,18 @@ How-to
 
 The analytical computations assumes that the wave is propagating along the :math:`-\vec e_z` axis.
 
-Using ``AnalyticalScattering`` is easy. First, include the header file and the ``matrix`` header from the **castor** project.
+Using ``AnalyticalScattering`` is easy. First, include the header file and the ``matrix`` header from the `castor <http://leprojetcastor.gitlab.labos.polytechnique.fr/castor>`_ project.
 
 .. code:: c++
 
     #include "castor/matrix.hpp"
     #include "analyticalscattering.hpp"
 
-**Remark:** ``AnalyticalScattering`` does not belong to the ``castor`` namespace.
+**Remark:** ``AnalyticalScattering``  *belongs* to the ``castor::`` namespace so one can use the following in the *preamble*
+
+.. code:: c++
+
+    using namespace castor;
 
 Then, set the wavenumber, the radius of the sphere, and some observation point.
 
@@ -38,3 +42,5 @@ Now assuming a Neumann boundary condition, we ask for a *domain* computation (``
 
     Matrix 1x1 of type 'St7complexIdE' (16 B):
        (0.01207,-0.03683)
+
+In order to compile the code, it is possible to use one of the command given at :ref:`label-requirements`.

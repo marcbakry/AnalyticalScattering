@@ -3,13 +3,13 @@
 Class AnalyticalScattering
 ==========================
 
-.. doxygenclass:: AnalyticalScattering
+.. doxygenclass:: castor::AnalyticalScattering
     :project: analyticalscattering
     :members:
     :undoc-members:
 
-.. doxygenenum:: radtyp
+.. doxygenenum:: castor::radtyp
     :project: analyticalscattering
 
-.. doxygenenum:: bndc
+.. doxygenenum:: castor::bndc
     :project: analyticalscattering

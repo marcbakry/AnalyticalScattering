@@ -1,6 +1,6 @@
 #pragma once
 
-#include "matrix/matrix.hpp"
+#include "castor/matrix.hpp"
 
 #ifndef CXX17_COMPLIANT
 
@@ -13,6 +13,9 @@ extern "C"
 #else
 #include <cmath>
 #endif
+
+namespace castor
+{
 
 /// Choose the type of field computation:\n
 /// - infinity: compute the far-field amplitude\n
@@ -261,3 +264,6 @@ private:
     }
 
 };
+
+// end of namespace
+}
