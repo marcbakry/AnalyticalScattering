@@ -33,7 +33,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: conda env create -f doc/environment.yml
-      - run: source activate doc
+      - run: conda activate doc
       - run: cd doc
       - run: make html
       - run: mv build/html ../docs
