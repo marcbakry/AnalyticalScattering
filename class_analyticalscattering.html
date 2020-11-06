@@ -1,0 +1,304 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Class AnalyticalScattering &mdash; Analytical Scattering  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/main_stylesheet.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Developers" href="developers.html" />
+    <link rel="prev" title="How-to" href="howto.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> Analytical Scattering
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Installation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html#requirements">Requirements</a></li>
+</ul>
+<p class="caption"><span class="caption-text">How-to</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="howto.html">How-to</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Class AnalyticalScattering</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Class AnalyticalScattering</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Contact</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="developers.html">Developers</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Analytical Scattering</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Class AnalyticalScattering</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/class_analyticalscattering.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="class-analyticalscattering">
+<span id="label-class-analyticalscattering"></span><h1>Class AnalyticalScattering<a class="headerlink" href="#class-analyticalscattering" title="Permalink to this headline">¶</a></h1>
+<dl class="cpp class">
+<dt id="_CPPv4I0EN6castor20AnalyticalScatteringE">
+<span id="_CPPv3I0EN6castor20AnalyticalScatteringE"></span><span id="_CPPv2I0EN6castor20AnalyticalScatteringE"></span>template&lt;typename <code class="sig-name descname">T</code>&gt;<br /><span class="target" id="classcastor_1_1AnalyticalScattering"></span><em class="property">class </em><code class="sig-prename descclassname">castor<code class="sig-prename descclassname">::</code></code><code class="sig-name descname">AnalyticalScattering</code><a class="headerlink" href="#_CPPv4I0EN6castor20AnalyticalScatteringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Class for the analytical computation of scattered waves when the incident field is a plane wave propagating along the -e_z axis. The obstacle is assumed to be a non-penetrable sphere with various boundary conditions.<p>There are three types of computation:</p>
+<ul class="simple">
+<li><p>field on the surface,</p></li>
+<li><p>field in the propagation domain,</p></li>
+<li><p>farfield amplitude (amplitude of the 0th-order term of the asymptotic expansion at infinity) </p></li>
+</ul>
+</p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6castor20AnalyticalScattering15sphereHelmholtzE6matrixI1TE1T1T4bndc6radtyp">
+<span id="_CPPv3N6castor20AnalyticalScattering15sphereHelmholtzE6matrixI1TE1T1T4bndc6radtyp"></span><span id="_CPPv2N6castor20AnalyticalScattering15sphereHelmholtzE6matrixI1TE1T1T4bndc6radtyp"></span><span id="castor::AnalyticalScattering::sphereHelmholtz__matrix:T:.T.T.bndc.radtyp"></span><span class="target" id="classcastor_1_1AnalyticalScattering_1a4400194156c1c75b9565efb9bf015988"></span>matrix&lt;std::complex&lt;<a class="reference internal" href="#_CPPv4I0EN6castor20AnalyticalScatteringE" title="castor::AnalyticalScattering::T">T</a>&gt;&gt; <code class="sig-name descname">sphereHelmholtz</code><span class="sig-paren">(</span>matrix&lt;<a class="reference internal" href="#_CPPv4I0EN6castor20AnalyticalScatteringE" title="castor::AnalyticalScattering::T">T</a>&gt; <em>Xobs</em>, <a class="reference internal" href="#_CPPv4I0EN6castor20AnalyticalScatteringE" title="castor::AnalyticalScattering::T">T</a> <em>rho</em>, <a class="reference internal" href="#_CPPv4I0EN6castor20AnalyticalScatteringE" title="castor::AnalyticalScattering::T">T</a> <em>k</em>, <a class="reference internal" href="#_CPPv4N6castor4bndcE" title="castor::bndc">bndc</a> <em>bc</em>, <a class="reference internal" href="#_CPPv4N6castor6radtypE" title="castor::radtyp">radtyp</a> <em>rt</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6castor20AnalyticalScattering15sphereHelmholtzE6matrixI1TE1T1T4bndc6radtyp" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Computes the exact scattered acoustic field when the obstacle is a sphere. The arguments are:<ul class="simple">
+<li><p><em>Xobs</em> : observation nodes. If <em>bc</em> == farfield, the <em>Xobs</em> are the directions in which the farfield amplitude will be computed.</p></li>
+<li><p><em>rho</em> : radius of the sphere.</p></li>
+<li><p><em>k</em> : wavenumber.</p></li>
+<li><p><em>rt</em> : type of computation (<em>boundary</em>, <em>domain</em>, <em>infinity</em>)</p></li>
+<li><p><em>bc</em> : type of boundary condition (<em>Dirichlet</em>, <em>Neumann</em>) </p></li>
+</ul>
+</p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp enum">
+<dt id="_CPPv4N6castor6radtypE">
+<span id="_CPPv3N6castor6radtypE"></span><span id="_CPPv2N6castor6radtypE"></span><span class="target" id="AnalyticalScattering_8hpp_1ad893fbad7246c55839de1428bde31fa9"></span><em class="property">enum </em><code class="sig-prename descclassname">castor<code class="sig-prename descclassname">::</code></code><code class="sig-name descname">radtyp</code><a class="headerlink" href="#_CPPv4N6castor6radtypE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Choose the type of field computation:<ul class="simple">
+<li><p>infinity: compute the far-field amplitude</p></li>
+<li><p>boundary: compute the scattered field on the surface of the scatterer</p></li>
+<li><p>domain: compute the scattered field in the propagation domain </p></li>
+</ul>
+</p>
+<p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6castor6radtyp8infinityE">
+<span id="_CPPv3N6castor6radtyp8infinityE"></span><span id="_CPPv2N6castor6radtyp8infinityE"></span><span class="target" id="AnalyticalScattering_8hpp_1ad893fbad7246c55839de1428bde31fa9a602ed85f5f54b514fa199addab9a81ca"></span><em class="property">enumerator </em><code class="sig-name descname">infinity</code><a class="headerlink" href="#_CPPv4N6castor6radtyp8infinityE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6castor6radtyp8boundaryE">
+<span id="_CPPv3N6castor6radtyp8boundaryE"></span><span id="_CPPv2N6castor6radtyp8boundaryE"></span><span class="target" id="AnalyticalScattering_8hpp_1ad893fbad7246c55839de1428bde31fa9ae672a9e0eade42d5a38abc501cb22d09"></span><em class="property">enumerator </em><code class="sig-name descname">boundary</code><a class="headerlink" href="#_CPPv4N6castor6radtyp8boundaryE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6castor6radtyp6domainE">
+<span id="_CPPv3N6castor6radtyp6domainE"></span><span id="_CPPv2N6castor6radtyp6domainE"></span><span class="target" id="AnalyticalScattering_8hpp_1ad893fbad7246c55839de1428bde31fa9a4edf6fb402d74ee2ca5be3984e873ded"></span><em class="property">enumerator </em><code class="sig-name descname">domain</code><a class="headerlink" href="#_CPPv4N6castor6radtyp6domainE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="cpp enum">
+<dt id="_CPPv4N6castor4bndcE">
+<span id="_CPPv3N6castor4bndcE"></span><span id="_CPPv2N6castor4bndcE"></span><span class="target" id="AnalyticalScattering_8hpp_1ace53ac11f4da3b83afe83184d7db332a"></span><em class="property">enum </em><code class="sig-prename descclassname">castor<code class="sig-prename descclassname">::</code></code><code class="sig-name descname">bndc</code><a class="headerlink" href="#_CPPv4N6castor4bndcE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Choose the type of boundary condition:<ul class="simple">
+<li><p>dirichlet: homogeneous Dirichlet condition</p></li>
+<li><p>neumann: homogeneous Neumann condition </p></li>
+</ul>
+</p>
+<p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6castor4bndc9dirichletE">
+<span id="_CPPv3N6castor4bndc9dirichletE"></span><span id="_CPPv2N6castor4bndc9dirichletE"></span><span class="target" id="AnalyticalScattering_8hpp_1ace53ac11f4da3b83afe83184d7db332aac7ade916946cf9e96a55ee3af43e691b"></span><em class="property">enumerator </em><code class="sig-name descname">dirichlet</code><a class="headerlink" href="#_CPPv4N6castor4bndc9dirichletE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6castor4bndc7neumannE">
+<span id="_CPPv3N6castor4bndc7neumannE"></span><span id="_CPPv2N6castor4bndc7neumannE"></span><span class="target" id="AnalyticalScattering_8hpp_1ace53ac11f4da3b83afe83184d7db332aa77d752c69ec9f087926f46decd1adce6"></span><em class="property">enumerator </em><code class="sig-name descname">neumann</code><a class="headerlink" href="#_CPPv4N6castor4bndc7neumannE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="developers.html" class="btn btn-neutral float-right" title="Developers" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="howto.html" class="btn btn-neutral float-left" title="How-to" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Ecole Polytechnique, Marc Bakry
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
