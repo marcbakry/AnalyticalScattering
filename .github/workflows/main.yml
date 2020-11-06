@@ -31,20 +31,25 @@ jobs:
     container: continuumio/miniconda3
 
     steps:
-      - uses: actions/checkout@v2
-      - shell: bash
+      - name: "Checkout"
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+      - name: "update miniconda python"
+        run: conda env update -n base --file doc/environment.yml
+        
+      - name: "build doc"
         run: |
-          conda env update -n base --file doc/environment.yml
           cd doc
           make html
           touch build/html/.nojekyll
-          mv build/html ../docs
-          ls -ah ../docs
-          cd ..
-      - uses: actions/upload-artifact@v2
+          
+      - name: "deploy pages"
+        uses: JamesIves/github-pages-deploy-action@3.5.9
         with:
-          name: doc
-          path: docs
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: doc/build/html
           
       # Runs a set of commands using the runners shell
 #       - name: Run a multi-line script
