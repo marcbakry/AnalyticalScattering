@@ -37,7 +37,7 @@ jobs:
           persist-credentials: false
 
       - name: "setup  python"
-        run: conda env update --file doc/environment.yml
+        run: conda env update -n base --file doc/environment.yml
         
       - name: "build doc"
         run: |
