@@ -39,7 +39,7 @@ jobs:
         
       - name: "build doc"
         run: |
-          apt-install rsync
+          apt-get install --yes rsync
           cd doc
           make html
           touch build/html/.nojekyll
