@@ -17,6 +17,8 @@ The header ``AnalyticalScattering.hpp`` can be found in the ``include/`` subfold
 Requirements
 ++++++++++++
 
+First of all, one needs to have the `castor <http://leprojetcastor.gitlab.labos.polytechnique.fr/castor>`_ project installed.
+
 ``AnalyticalScattering`` may, or may not use an external library. If you use a **fully** ``c++-17`` **-compliant compiler** (more precisely, the ``<cmath>`` Bessel-function-related part of the ``c++-17`` standard), then you should define ``CXX17_COMPLIANT`` (by passing the ``-DCXX17_COMPLIANT`` option to the compiler see below). **For your information, the** ``g++`` **compiler (which is an alias for** ``clang`` **) from the developer tools in MacOS is NOT compliant**. The typical compiler command is (assuming the compiler is ``g++`` and the main is ``overview.cpp``)
 
 .. code:: text
