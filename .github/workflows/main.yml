@@ -33,6 +33,8 @@ jobs:
     steps:
       - name: "Checkout"
         uses: actions/checkout@v2
+        with:
+          persist-credentials: false
 
       - name: "setup  python"
         run: conda env update -n base --file doc/environment.yml
