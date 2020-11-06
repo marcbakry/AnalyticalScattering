@@ -28,15 +28,22 @@ jobs:
         
   pages:
     runs-on: ubuntu-latest
-    container: continuumio/miniconda3
 
     steps:
       - name: "Checkout"
         uses: actions/checkout@v2
         with:
           persist-credentials: false
-      - name: "update miniconda python"
-        run: conda env update -n base --file doc/environment.yml
+          
+      - name: "set up python"
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.8
+
+      - name: "update  python"
+        run: |
+          pip3 install setuptools
+          pip3 install sphinx sphinx-rtd-theme breathe
         
       - name: "build doc"
         run: |
