@@ -38,6 +38,7 @@ jobs:
           cd doc
           make html
           touch build/html/.nojekyll
+          touch ../.nojekyll
           mv build/html ../docs
           ls -ah ../docs
           cd ..
@@ -45,6 +46,10 @@ jobs:
         with:
           name: docs
           path: docs
+      - uses: actions/upload-artifacts@v2
+        with:
+          name: nojekyll
+          path: .nojekyll
 
 
       # Runs a set of commands using the runners shell
