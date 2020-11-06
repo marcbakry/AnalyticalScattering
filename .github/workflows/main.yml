@@ -28,35 +28,30 @@ jobs:
         
   pages:
     runs-on: ubuntu-latest
+    container: continuumio/miniconda3
 
     steps:
       - name: "Checkout"
         uses: actions/checkout@v2
         with:
           persist-credentials: false
-          
-      - name: "set up python"
-        uses: actions/setup-python@v1
-        with:
-          python-version: 3.8
 
-      - name: "update  python"
-        run: |
-          pip3 install setuptools
-          pip3 install sphinx sphinx-rtd-theme breathe
+      - name: "setup  python"
+        run: conda env update --file doc/environment.yml
         
       - name: "build doc"
         run: |
           cd doc
           make html
           touch build/html/.nojekyll
+          cp -r build/html ../docs
           
       - name: "deploy pages"
         uses: JamesIves/github-pages-deploy-action@3.5.9
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: doc/build/html
+          FOLDER: docs
           
       # Runs a set of commands using the runners shell
 #       - name: Run a multi-line script
