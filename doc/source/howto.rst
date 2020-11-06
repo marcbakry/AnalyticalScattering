@@ -44,3 +44,5 @@ Now assuming a Neumann boundary condition, we ask for a *domain* computation (``
        (0.01207,-0.03683)
 
 In order to compile the code, it is possible to use one of the command given in the :ref:`label-requirements` section.
+
+The full ``main.cpp`` can be found in the ``demo/`` subfolder of this project.
