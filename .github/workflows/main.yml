@@ -43,8 +43,8 @@ jobs:
           cd ..
       - uses: actions/upload-artifact@v2
         with:
-          name: doc
-          path: docs
+          name: docs
+          path: docs/*
 
 
       # Runs a set of commands using the runners shell
