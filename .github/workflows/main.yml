@@ -45,6 +45,7 @@ jobs:
           make html
           touch build/html/.nojekyll
           cp -r build/html ../docs
+          cd ..
           
       - name: "deploy pages"
         uses: JamesIves/github-pages-deploy-action@3.5.9
