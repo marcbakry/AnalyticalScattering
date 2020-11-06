@@ -32,13 +32,14 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - run: conda init bash
-      - run: conda env create -f doc/environment.yml
-      - run: conda activate doc
-      - run: cd doc
-      - run: make html
-      - run: mv build/html ../docs
-          
+      - shell: bash
+        run: |
+          conda init bash
+          conda env create -f doc/environment.yml
+          conda activate doc
+          cd doc
+          make html
+          mv build/html ../docs
       - uses: actions/upload-artifact@v2
         with:
           name: doc
