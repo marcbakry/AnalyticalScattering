@@ -188,14 +188,14 @@
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">AnalyticalScattering</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span> <span class="n">as</span><span class="p">;</span>    <span class="c1">// create the object</span>
 
 <span class="k">auto</span> <span class="n">Uobs</span> <span class="o">=</span> <span class="n">as</span><span class="p">.</span><span class="n">sphereHelmholtz</span><span class="p">(</span><span class="n">Xobs</span><span class="p">,</span> <span class="n">R</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">neumann</span><span class="p">,</span> <span class="n">domain</span><span class="p">);</span>
-<span class="n">disp</span><span class="p">(</span><span class="n">Uobs</span><span class="p">);</span>     <span class="c1">// display the value of the scattered field at Xobs</span>
+<span class="n">disp</span><span class="p">(</span><span class="n">Uobs</span><span class="p">,</span><span class="mi">2</span><span class="p">);</span>     <span class="c1">// display the value of the scattered field at Xobs</span>
 </pre></div>
 </div>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Matrix 1x1 of type &#39;St7complexIdE&#39; (16 B):
    (0.01207,-0.03683)
 </pre></div>
 </div>
-<p>In order to compile the code, it is possible to use one of the command given at <a class="reference internal" href="installation.html#label-requirements"><span class="std std-ref">Requirements</span></a>.</p>
+<p>In order to compile the code, it is possible to use one of the command given in the <a class="reference internal" href="installation.html#label-requirements"><span class="std std-ref">Requirements</span></a> section.</p>
 </div>
 
 

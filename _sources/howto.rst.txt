@@ -35,7 +35,7 @@ Now assuming a Neumann boundary condition, we ask for a *domain* computation (``
     AnalyticalScattering<double> as;    // create the object
     
     auto Uobs = as.sphereHelmholtz(Xobs, R, k, neumann, domain);
-    disp(Uobs);     // display the value of the scattered field at Xobs
+    disp(Uobs,2);     // display the value of the scattered field at Xobs
 
 
 .. code:: text
@@ -43,4 +43,4 @@ Now assuming a Neumann boundary condition, we ask for a *domain* computation (``
     Matrix 1x1 of type 'St7complexIdE' (16 B):
        (0.01207,-0.03683)
 
-In order to compile the code, it is possible to use one of the command given at :ref:`label-requirements`.
+In order to compile the code, it is possible to use one of the command given in the :ref:`label-requirements` section.
