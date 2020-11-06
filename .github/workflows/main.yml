@@ -39,7 +39,7 @@ jobs:
           make html
           touch build/html/.nojekyll
           mv build/html ../docs
-          ls docs
+          ls ../docs
       - uses: actions/upload-artifact@v2
         with:
           name: doc
