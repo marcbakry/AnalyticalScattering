@@ -21,11 +21,20 @@ This small templatized class aims at providing functions for the analytical vali
 
     howto
 
+
 .. toctree::
     :caption: Class AnalyticalScattering
     :maxdepth: 1
 
     class_analyticalscattering
+
+
+.. toctree::
+    :caption: Castor
+    :maxdepth: 1
+
+    castor
+
 
 .. toctree::
     :caption: Contact
